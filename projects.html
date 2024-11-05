@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <!-- 
+    Author: Jeffrey Beckett
+    Date: 12/13/2023
+    Assignment: Final Project 
+    -->
+	
+    <link rel="stylesheet" href="FinalProject.css">
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+	
+	
+    <style>
+        .project-list {
+            list-style-type: none;
+            padding-left: 0;      
+        }
+
+.social-icons img {
+            width: 22px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<nav> 
+   
+<u><a href="index.html"><b>Home</b></a></u>
+<u><a href="Resume.html"><b>Resume</b></a></u>
+<u><a href="Certifications.html"><b>Certifications</b></a></u>
+<u><a href="aboutme.html"><b>About Me</b></a></u>
+<u><a href="projects.html"><b>Projects</b></a></u>
+<u><a href="skills.html"><b>Skills</b></a></u>
+<u><a href="Feed Back.html"><b>Feedback Form</b></a></u>
+</nav>
+
+
+    <header>
+        <h1>Projects</h1>
+    </header>
+    
+    <main>
+        <h2>👨‍💻 Cybersecurity Projects:</h2>
+        <ul class="project-list">
+            <li><b>Azure / Cloud projects</b></li>
+            <li><a href="https://github.com/JeffBeck12/Azure-Soc">Creating a Live Soc/Honeynet</a></li>
+            <li>Use of SIEM Tools to detect and respond to threats</li>
+            <li>Securing Environments in Microsoft Azure</li>
+
+            <li><b>Cybersecurity frameworks</b></li>
+            <li>Nist 800-37</li>
+            <li>Nist 800-csf</li>
+
+            <li><a href="https://github.com/JeffBeck12/cybersecurity-audits">Cybersecurity Incident Report</a></li>
+            <li>Network Traffic Analysis</li>
+            <li>Cybersecurity Incident Report</li>
+            <li>Security Audit</li>
+
+            <li><a href="https://github.com/JeffBeck12/Linux-CLS">Linux</a></li>
+            <li>Checked existing permissions using "ls -la" to inform decisions.</li>
+            <li>Modified permissions using the "chmod" command</li>
+           
+        </ul>
+		<p><h2>Cybersecurity Incident Report<h2></p>
+		<table class="projects-table">
+    <tr>
+        <th>Section 1: Identify the type of attack that may have caused this network interruption</th>
+    </tr>
+    <tr>
+        <td>
+            After reviewing the logs, in my opinion, the website is being DDoS attacked. The server is being bombarded with SYN requests causing the server to stop responding. This could be what is called a SYN attack.
+        </td>
+    </tr>
+    <tr>
+        <th>Section 2: Explain how the attack is causing the website to malfunction</th>
+    </tr>
+    <tr>
+        <td>
+            <p>When the website visitors try to establish a connection with the web server, a three-way handshake occurs using the TCP protocol. The handshake consists of three steps:</p>
+            <ol>
+                <li>A SYN packet is sent from the source to the destination, requesting to connect.</li>
+                <li>The destination replies to the source with a SYN-ACK packet to accept the connection request. The destination will reserve resources for the source to connect.</li>
+                <li>A final ACK packet is sent from the source to the destination acknowledging the permission to connect.</li>
+            </ol>
+            <p>A SYN flood attack simulates a TCP connection and floods the server with SYN packets. The attacker floods the target server with a high volume of SYN requests, overwhelming its resources and causing a disruption in normal operations.</p>
+            <p>Initially, the attacker’s SYN request is answered normally by the web server (log items 52-54). However, the attacker keeps sending more SYN requests. The log begins to reflect the struggle the web server is having to keep up with the abnormal number of SYN requests coming in at a rapid pace. The attacker is sending several SYN requests every second. Eventually, the Server stopped responding to legitimate employee visitor traffic.</p>
+        </td>
+    </tr>
+</table>
+           <p><h2>Security Risk Assessment Report<h2></p>
+	<table class="projects-table">
+    <tr>
+        <th>Part 1: Select up to three hardening tools and methods to implement</th>
+    </tr>
+    <tr>
+        <td>
+            <p>Three hardening tools the organization can use to address the vulnerabilities found include:</p>
+            <ul>
+                <li>Implementing multi-factor authentication (MFA)</li>
+                <li>Setting and enforcing strong password policies</li>
+                <li>Performing firewall maintenance regularly</li>
+            </ul>
+            <p>MFA requires users to use more than one way to identify and verify their credentials before accessing an application. Some MFA methods include fingerprint scans, ID cards, pin numbers, and passwords.</p>
+            <p>Password policies can be refined to include rules regarding password length, a list of acceptable characters, and a disclaimer to discourage password sharing. They can also include rules surrounding unsuccessful login attempts, such as the user losing access to the network after five unsuccessful attempts.</p>
+            <p>Firewall maintenance entails checking and updating security configurations regularly to stay ahead of potential threats.</p>
+        </td>
+    </tr>
+    <tr>
+        <th>Part 2: Explain your recommendation(s)</th>
+    </tr>
+    <tr>
+        <td>
+            <p>Enforcing multi-factor authentication (MFA) will reduce the likelihood that a malicious actor can access a network through a brute force or related attack. MFA will also make it more difficult for people within the organization to share passwords. Identifying and verifying credentials is especially critical among employees with administrator level privileges on the network. MFA should be enforced regularly.</p>
+            <p>Creating and enforcing a password policy within the company will make it increasingly challenging for malicious actors to access the network. The rules that are included in the password policy will need to be enforced regularly within the organization to help increase user security.</p>
+            <p>Firewall maintenance should happen regularly. Firewall rules should be updated whenever a security event occurs, especially an event that allows suspicious network traffic into the network. This measure can be used to protect against various DoS and DDoS attacks.</p>
+        </td>
+    </tr>
+</table>
+	   
+
+<h2>📺 Popular YouTube Videos</h2>
+        
+
+        <h2>🤳 Connect with me:</h2>
+        <div class="social-icons">
+            <a href="https://twitter.com/Supermanjeff12">Twitter</a>
+                
+           
+            <a href="https://www.linkedin.com/in/jeffrey-beckett-1a7252282/">Linkedin</a>
+
+            
+        </div>
+    </main>
+    
+    <footer>
+        <br><br><a href="mailto:beckett.jeffrey@student.ccm.edu">beckett.jeffrey@student.ccm.edu</a><br><br>
+    </footer>
+</body>
+</html>

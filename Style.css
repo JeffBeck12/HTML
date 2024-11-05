@@ -1,0 +1,83 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  background-color: #40407A; /* Dark Blue */
+  background-image: url(sunrise.png);
+  background-size: 100% 100%;
+  color: #FFFFFF; /* White Text */
+  font-size: 90%;
+  min-height: 200px;
+  margin-top: 50px;
+  font-weight: bold; /* Added for better readability */
+}
+
+/* ... (rest of your existing code) ... */
+
+/* Navigation Bar Styles */
+nav {
+  text-align: right;
+  background-color: #FFFFFF; /* White Background */
+  color: #1a1aff; /* Blue Text */
+  /* ... (rest of your existing nav styles) ... */
+}
+
+nav a:hover {
+    color: gray;
+}
+
+main {
+    padding: 20px;
+    margin-left: 250px;
+	margin-right: auto;
+	
+}
+
+footer {
+    background-color: #F7B947;
+    color: #0D74BF;
+    font-style: italic;
+    font-size: .8em;
+    text-align: center;
+    padding: 10px;
+/* Body Styles */
+body {
+  background-color: #40407A;
+  color: #FFFFFF;
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0 10%; /* Adds padding to left and right */
+}
+
+/* Wrapper Styles */
+#wrapper {
+  background-color: #F5F5F5;
+  padding: 2em 10%; /* Adds padding to left and right */
+}
+
+/* ... (rest of your existing code) ... */
+
+/* Table Styles */
+table, td, th {
+  border: 1px solid #000000; /* Black Borders */
+}
+
+tr:nth-of-type(even) {
+  background-color: #D7E8E9; /* Light Blue for Even Rows */
+}
+
+tr:nth-of-type(odd) {
+  background-color: #FFFFFF; /* White for Odd Rows */
+}
+
+/* Form Styles */
+input, datalist, textarea {
+  border: 2px solid #40407A; /* Dark Blue Border */
+  background-color: #FFFFFF; /* White Background */
+  /* ... (rest of your existing form styles) ... */
+}
+
+/* ... (rest of your existing code) ... */

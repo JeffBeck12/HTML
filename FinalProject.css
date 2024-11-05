@@ -1,0 +1,73 @@
+/* Existing CSS */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    font-size: 1.5vw; 
+    padding: 1em;
+    text-align: center; 
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 0.5em;
+    color: #336699;
+    background-color: white;
+    border: 3px solid #CCCCCC;
+    transition: color 0.3s, border 0.3s;
+}
+
+nav a:hover {
+    color: #A26100;
+    border-color: #333333;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 1em;
+    text-align: center; 
+}
+
+/* Added CSS for the projects table */
+.projects-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-table th,
+.projects-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.projects-table th {
+    border-bottom: 1px solid black;
+}

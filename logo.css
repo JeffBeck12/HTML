@@ -1,0 +1,12 @@
+/* CSS */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.image-container img:first-child {
+    width: 20%; /* Set the width of the first image to 20% */
+    margin-top: -10px; /* Move the image 10px higher (adjust as needed) */
+    margin-left: -10px; /* Move the image 10px to the left (adjust as needed) */
+}
